@@ -43,10 +43,20 @@ public class MainApp {
 		if(inputRaining.equalsIgnoreCase("yes"))  raining = true;
 		
 		//Test if the variable is working
-				System.out.println(fancyFriday + " " + sunny + " " + raining);
+		//System.out.println(fancyFriday + " " + sunny + " " + raining);
 		
 		//Set condition variables based on input
-
+		if(fancyFriday){
+			if(sunny){
+				System.out.println("tea gown");
+			}else if(raining){
+				System.out.println("power suit");
+			}else{
+				System.out.println("long gown");
+			}
+		}else{
+			System.out.println("tshirt and jeans");
+		}
 		
 		
 		//Use if statement to decide what to wear
